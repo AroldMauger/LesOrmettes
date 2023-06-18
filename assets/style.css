@@ -1,0 +1,765 @@
+body {
+    margin : 0px;
+}
+
+
+
+h1 {
+    font-family: Spectral;
+    padding-left: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap : 30px;
+    margin-right: 60px;
+    margin-top: 35px;
+    font-family: Spectral;
+    font-size: 18px;
+}
+
+.button_navigation > a {
+    text-decoration: none;
+}
+
+.carrousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition : opacity 0.5s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .images_carrousel {
+    display: none;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+
+  }
+  
+  .bouton_carrousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #prevButton {
+    left: 10px;
+    font-size: 90px;
+    color:white;
+    background-color: transparent;
+
+  }
+  
+  #nextButton {
+    right: 10px;
+    font-size: 90px;
+    color:white;
+    background-color: transparent;
+  }
+
+.navigation_jeux {
+  background-color: white;
+  color: black;
+  display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap : 30px;
+    margin-right: 60px;
+    margin-top: 35px;
+    font-family: Spectral;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.button_navigation_jeux {
+  padding : 12px;
+  border-radius: 10px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.button_navigation_jeux > a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.button_navigation_jeux:hover {
+  background-color: orange;
+}
+
+  .photo_du_gerant{
+    padding : 30px;
+  }
+
+  .photo_du_gerant img {
+    border-radius: 20px;
+
+  }
+
+  #photo_arnaud {
+    width:600px;
+  }
+
+  #a_propos {
+    display: flex;
+    flex-direction: row;
+    background-color: fuchsia;
+
+  }
+
+
+  #a_propos_texte {
+    padding : 20px;
+    text-align: justify;
+    background-color: yellow;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    color: black;
+  }
+
+  .a_propos_texte_titre {
+    font-family: Spectral;
+    font-size: 30px;
+  }
+
+  #a_propos_texte p {
+    font-family: Spectral;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .text_orange {
+    font-weight: bold;  
+  }
+
+.selectionner_jeux {
+    color: white;
+    font-family: Spectral;
+    font-weight: 800;
+    text-align: center;
+}
+
+  /* STYLE POUR LES CARTES CATEGORIES DE JEUX*/
+.container {
+	max-width: 110rem;
+	padding: 1.5rem;
+    background-color: black;
+}
+.cards {
+	display: flex;
+    flex-direction: row;
+    gap : 50px;
+    justify-content: center;
+}
+
+.cards a {
+    text-decoration: none;
+}
+.card {
+	color: #fff;
+	padding: 1.5rem;
+	overflow: hidden;
+	border-radius: 0.8rem;
+    width: 500px;
+    height: 280px;
+    margin-bottom: 30px;
+}
+.card-title-large {
+	font-family: Arial, sans-serif;
+	font-size: 40px;
+	color: white;
+    user-select: none;
+    margin-top: 10px;
+}
+.card-title-small {
+	margin-bottom: 1rem;
+}
+.card-description {
+	font-size: 1.4rem;
+	line-height: 1.5;
+}
+
+.card-cta {
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	margin-left: auto;
+}
+.card:hover .card-cta {
+	background-color: #262525;
+}
+.card:hover .card-title-large {
+	color: #fff;
+}
+
+
+.realite_virtuelle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		#feda78 20%,
+		#e23467 60%,
+		#ac2bb3 90%
+	);
+}
+
+.realite_virtuelle:hover {
+    opacity: 1;
+}
+
+.realite_virtuelle >h2{
+    margin-bottom: 20px;
+}
+
+.mini_bowling{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		blue 20%,
+		green 60%,
+		yellow 90%
+	);
+}
+
+.mini_bowling:hover {
+    opacity: 1;
+}
+
+.mini_bowling >h2{
+    margin-bottom: 20px;
+}
+
+.billards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		white 20%,
+		orange 60%,
+		grey 90%
+	);
+}
+
+.billards:hover {
+    opacity: 1;
+}
+
+.billards >h2{
+    margin-bottom: 20px;
+}
+.classiques{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		black 20%,
+		blue 60%,
+		cyan 90%)
+}
+
+.classiques:hover {
+    opacity: 1;
+}
+
+.classiques >h2{
+    margin-bottom: 20px;
+}
+
+.arcades{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		black 20%,
+		rgba(195, 0, 255, 0.886) 60%,
+		yellow 90%)
+}
+
+.arcades:hover {
+    opacity: 1;
+}
+
+.arcades >h2{
+    margin-bottom: 20px;
+}
+
+.jeux_de_force{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		black 20%,
+		grey 60%,
+		red 90%)
+}
+
+.jeux_de_force:hover {
+    opacity: 1;
+}
+
+.jeux_de_force >h2{
+    margin-bottom: 20px;
+}
+
+
+.flippers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		black 20%,
+		blue 60%,
+		cyan 90%)
+}
+
+.flippers:hover {
+    opacity: 1;
+}
+
+.flippers >h2{
+    margin-bottom: 20px;
+}
+
+.tout-petits{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    background: radial-gradient(
+		at 20% 128%,
+		blue 20%,
+		green 60%,
+		yellow 90%
+	);
+}
+
+.tout-petits:hover {
+    opacity: 1;
+}
+
+.tout-petits >h2{
+    margin-bottom: 20px;
+}
+
+#titre_principal {
+    text-decoration: none;
+    color: black;
+}
+
+/* MINI-BOWLING */
+
+.nos_bowlings {
+    color:black;
+    font-family: Spectral;
+    font-size: 50px;
+    background-color: fuchsia;
+}
+
+#a_propos_bowling {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+
+}
+
+#a_propos_texte_bowling {
+    padding : 20px;
+    text-align: justify;
+    border-radius: 20px;
+    margin-right: 20px;
+    width : 800px;
+    
+}
+
+
+  #a_propos_texte_bowling p {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  
+
+  .carrousel_bowling {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition : opacity 0.5s ease-in-out;
+    margin-bottom: 60px;
+    padding:30px;
+  }
+  
+  .images_carrousel_bowling {
+    width : 700px;
+  }
+  
+  .bouton_carrousel_bowling {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+  }
+  
+  #prevButton_bowling {
+    left: 50px;
+    font-size: 60px;
+    color:white;
+    background-color: transparent;
+
+  }
+  
+  #nextButton_bowling {
+    right: 50px;
+    font-size: 60px;
+    color:white;
+    background-color: transparent;
+  }
+
+  .carrousel_bowling img {
+    width: 1920px;
+    height: 1080px;
+  }
+
+  #a_propos_texte_bowling p {
+    margin : 0px;
+  }
+
+  .carrousel_bowling img {
+    width:50%;
+    height: 50%;
+}   
+
+/* JEUX REALITE VIRTUELLE */
+
+.images_moto_rv {
+  width:65%;
+  border : solid 2px black;
+}
+
+.carrousel_dark_escape {
+    display: flex;
+    flex-direction: row;
+    gap : 50px;
+    justify-content: center;
+  
+}
+
+.images_dark_escape {
+    width: 20%;
+    height: 20%;
+    border: solid 2px #580b08;
+}
+
+#a_propos_dark_escape {
+  display: flex;
+  flex-direction: row;
+  background-color: #FF7F50;
+
+}
+
+#a_propos_texte_dark_escape p {
+    text-align: center;
+    margin : 0px;
+    padding-top:20px;
+    padding-bottom:40px;
+    color:white;
+    font-size: 30px;
+}
+
+#dark_escape_container {
+    background-color: darkred;
+}
+
+#a_propos_texte_moto {
+    font-size: 27px;
+    padding : 20px;
+    padding-top:0px;
+    text-align: justify;
+    border-radius: 20px;
+    margin-right: 20px;
+    width : 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:0px;
+}
+
+#a_propos_texte_titre_moto {
+    font-size: 30px;
+    padding-top : 20px;
+    text-align: center;
+    background-color: #FF7F50;
+    margin:0px;
+    padding:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+  }
+
+.a_propos_texte_titre_bowling {
+  font-size: 30px;
+    padding-top : 20px;
+    text-align: center;
+    background-color: orange;
+    margin:0px;
+    padding:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* BILLARDS */
+
+#a_propos_texte_titre_billard {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: greenyellow;
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.images_billard {
+  width:500px;
+  border-radius: 10px;
+}
+
+#a_propos_billard {
+  display: flex;
+  flex-direction: row;
+  background-color: greenyellow;
+  padding : 30px;
+}
+
+#a_propos_texte_billard {
+  font-size: 27px;
+    padding : 50px;
+    padding-top:0px;
+    text-align: justify;
+    border-radius: 20px;
+    margin-right: 20px;
+    width : 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:0px;
+}
+
+/* LES CLASSIQUES */
+
+#a_propos_texte_titre_classiques {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: #32b5c1;
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#classiques_container {
+  background-color: #32b5c1;
+
+}
+
+.images_baby {
+  width: 31%;
+  border: solid 2px #580b08;
+}
+
+/* JEUX D'ARCADES */
+
+#a_propos_texte_titre_arcades {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: #FF00FF;
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.bouton_carrousel_arcades {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#force_container {
+  background-color: rgb(160, 153, 153);
+}
+
+#a_propos_texte_titre_force {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: rgb(160, 153, 153);
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#a_propos_texte_force p {
+  text-align: center;
+  margin : 0px;
+  padding-top:20px;
+  padding-bottom:40px;
+  font-size: 30px;
+}
+
+/* FLIPPERS */
+
+.carrousel_dark_escape {
+  display: flex;
+  flex-direction: row;
+  gap : 30px;
+  justify-content: center;
+}
+
+.images_flippers {
+  width: 220px;
+  border: solid 2px green;
+}
+
+#a_propos_texte_titre_flippers {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: palegreen;
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+#flippers_container {
+  background-color: palegreen;
+
+}
+
+.banner_flippers {
+  padding-top : 40px;
+  background-color: palegreen;
+  padding:20px;
+}
+
+.images_carrousel_flipper {
+  border: solid 2px green;
+  width: 100%;
+
+}
+
+.carrousel_arcades {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#a_propos_texte_arcades p{
+  text-align: center;
+  margin : 0px;
+  padding-top:20px;
+  padding-bottom:40px;
+  font-size: 30px;
+  background-color: #FF00FF;
+}
+
+#petits_container {
+  background-color: pink;
+
+}
+
+#a_propos_texte_titre_petits {
+  font-size: 30px;
+  padding-top : 20px;
+  text-align: center;
+  background-color: pink;
+  margin:0px;
+  padding:40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.text_anniversaire {
+  font-size: 20px;
+}
+
+#a_propos_texte_anniversaire {
+  padding : 20px;
+  text-align: justify;
+  background-color: aqua;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  color: black;
+  margin-right: 0px;
+  margin-left: 20px;
+  
+}
+
+#a_propos_texte_anniversaire p {
+  font-family: Spectral;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.a_propos_texte_titre_anniversaire {
+  font-family: Spectral;
+  font-size: 30px;
+  margin-top:0px;
+}
+.navigation_liens {
+  color:black;
+}
+
+#plan {
+  width: 60%;
+}
+
+#a_propos_texte h3 {
+  font-size: 25px;
+}
+#plan_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
